@@ -20,10 +20,10 @@ public class SmokeTest {
     @Autowired
     private MockMvc mockMvc;
     @Test
-    public  void should_return_ok_when_request_endpoint_of_health() throws Exception {
+    void should_return_ok_when_request_endpoint_of_health() throws Exception {
         mockMvc
                 .perform(get("/actuator/health"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.status").value("DOWN"));
+                .andExpect(jsonPath("$.status").value("UP"));
     }
 }
