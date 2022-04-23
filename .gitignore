@@ -4,5 +4,3 @@
 /out
 /.gradle
 /build
-application-*.yml
-!application-example.yml
