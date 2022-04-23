@@ -1,5 +1,8 @@
+
 spring:
   datasource:
     url: jdbc:mysql:///question_service
     username: root
     password: root
+server:
+  port: 8888

@@ -1,0 +1,8 @@
+/.idea
+*.iml
+*.ipr
+/out
+/.gradle
+/build
+application-*.yml
+!application-example.yml
