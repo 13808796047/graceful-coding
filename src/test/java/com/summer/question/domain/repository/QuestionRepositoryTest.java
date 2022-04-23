@@ -22,7 +22,7 @@ class QuestionRepositoryTest {
     void repository_should_successfully__save_question(){
 
 
-        Question question = new Question(1L,"UID_00001","A test title","A test detail");
+        Question question = new Question("UID_00001","A test title","A test detail");
         Question result = questionRepository.save(question);
         System.out.println(result);
 //        assertThat(result.getQuestionerId(),equals(question.getQuestionerId()));

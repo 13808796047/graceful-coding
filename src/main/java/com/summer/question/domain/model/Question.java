@@ -17,7 +17,6 @@ import javax.persistence.Id;
  */
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Question {
     @Id
@@ -26,4 +25,9 @@ public class Question {
     private String title;
     private String detail;
 
+    public Question(String questionerId, String title, String detail) {
+        this.questionerId = questionerId;
+        this.title = title;
+        this.detail = detail;
+    }
 }
